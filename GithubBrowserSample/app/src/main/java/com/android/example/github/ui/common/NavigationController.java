@@ -33,7 +33,7 @@ public class NavigationController {
     private final int containerId;
     private final FragmentManager fragmentManager;
     @Inject
-    public NavigationController(MainActivity mainActivity) {
+    public NavigationController(MainActivity mainActivity) {//MainActivity会通过dagger提供
         this.containerId = R.id.container;
         this.fragmentManager = mainActivity.getSupportFragmentManager();
     }

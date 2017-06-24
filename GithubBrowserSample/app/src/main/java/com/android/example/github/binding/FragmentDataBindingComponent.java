@@ -20,8 +20,11 @@ import android.databinding.DataBindingComponent;
 import android.support.v4.app.Fragment;
 
 /**
+ * If using Dagger 2, the developer should extend this interface and annotate the extended interface as a Component.
  * A Data Binding Component implementation for fragments.
+ *
  */
+//给DataBindingUtil.inflate使用
 public class FragmentDataBindingComponent implements DataBindingComponent {
     private final FragmentBindingAdapters adapter;
 

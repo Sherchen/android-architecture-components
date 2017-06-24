@@ -49,7 +49,7 @@ import javax.inject.Inject;
 public class SearchFragment extends LifecycleFragment implements Injectable {
 
     @Inject
-    ViewModelProvider.Factory viewModelFactory;
+    ViewModelProvider.Factory viewModelFactory; //在ViewModelModule中已经绑定清楚了
 
     @Inject
     NavigationController navigationController;

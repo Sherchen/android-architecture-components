@@ -24,6 +24,7 @@ abstract class ViewModelModule {
     @ViewModelKey(SearchViewModel.class)
     abstract ViewModel bindSearchViewModel(SearchViewModel searchViewModel);
 
+    //@Binds必须是abstract方法
     @Binds
     @IntoMap
     @ViewModelKey(RepoViewModel.class)

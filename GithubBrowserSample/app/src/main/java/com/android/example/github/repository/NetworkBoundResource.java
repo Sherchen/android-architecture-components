@@ -45,6 +45,7 @@ public abstract class NetworkBoundResource<ResultType, RequestType> {
         this.appExecutors = appExecutors;
         result.setValue(Resource.loading(null));
         LiveData<ResultType> dbSource = loadFromDb();
+        //需要注意addSource还会监听dbSource的简化
         result.addSource(dbSource, data -> {
             result.removeSource(dbSource);
             if (shouldFetch(data)) {

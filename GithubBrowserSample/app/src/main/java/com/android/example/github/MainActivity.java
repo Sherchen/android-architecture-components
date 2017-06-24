@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements LifecycleRegistry
     private final LifecycleRegistry lifecycleRegistry = new LifecycleRegistry(this);
     @Inject
     DispatchingAndroidInjector<Fragment> dispatchingAndroidInjector;
-    @Inject
+    @Inject//dagger会自动调用构造函数@Inject指定的
     NavigationController navigationController;
 
     @Override

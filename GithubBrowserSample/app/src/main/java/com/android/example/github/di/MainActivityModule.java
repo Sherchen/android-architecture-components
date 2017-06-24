@@ -23,6 +23,7 @@ import dagger.android.ContributesAndroidInjector;
 
 @Module
 public abstract class MainActivityModule {
+    //首先要安装AndroidInjectionModule，在AppComponent里已经安装了
     @ContributesAndroidInjector(modules = FragmentBuildersModule.class)
     abstract MainActivity contributeMainActivity();
 }
